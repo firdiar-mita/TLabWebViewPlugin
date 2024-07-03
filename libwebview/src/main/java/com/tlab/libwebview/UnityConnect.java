@@ -969,6 +969,12 @@ public class UnityConnect extends Fragment {
 
     /**
      *
+     * @param js
+     */
+    public void captureEvaluateJs(String js) { loadUrl("javascript:window.TLabWebViewActivity.viewSource(JSON.stringify("+js+"))"); }
+
+    /**
+     *
      */
     public void capturePage() { loadUrl("javascript:window.TLabWebViewActivity.viewSource(document.documentElement.outerHTML)"); }
 
